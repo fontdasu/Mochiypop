@@ -1,84 +1,5 @@
 {
-.appVersion = "1131";
-DisplayStrings = (
-"/ke-hira",
-"/esmall-hira",
-"/gu-hira.001",
-"/gu-hira.001",
-"/ri-hira",
-"/ro-hira/ru-hira",
-"/ma-hira/ru-hira/i-hira/ro-hira/n-hira/do-hira/so-kata/si-kata/ru-kata/ba-kata/hu-kata/ku-kata rs",
-"/mo-hira/ti-hira/ro-hira/n-hira/ru-hira",
-"/ro-hira",
-"/n-hira",
-"/n-hira.001",
-"/a-hira/to-hira/ro-hira/no-hira/ma-hira/tu-hira/ri-hira",
-"/a-hira/to-hira/no-hira/ko-kata/ko-kata/ro-kata/yo-kata",
-"/ro-kata",
-"/do-hira",
-"/a-hira/no-hira/ri-hira/ma-hira/ki-hira",
-"/ho-hira/no-hira/ka-hira",
-"/we-hira",
-"/rosmall-hira.001",
-"/rosmall-hira.001.vert",
-"/to-hira",
-"/tu-hira/ku-hira",
-"/du-hira",
-"/tusmall-hira",
-"/tu-hira",
-"/ka-kata/su-kata",
-"/ga-kata",
-"/yu-kata/ni-kata/ba-kata",
-"/ba-kata",
-"/ha-kata",
-"/pa-kata",
-"/so-hira/no-hira/da-hira",
-"/zo-hira",
-"/a-hira/so-hira/bo-hira/u-hira",
-"/ka-kata",
-"/ni-kata",
-"/ka-kata.001",
-"/a-hira/so-hira/bo-hira",
-"/a-hira/so-hira/bo-hira/u-hira",
-"/a-hira/so-hira/ko-hira/da-hira",
-"/ko-hira",
-"/a-hira/na-hira/ta-hira/ka-hira/na-hira/so-hira/ke-hira/ri-hira/ke-hira/ka-hira/si-hira/a-hira/ka-hira",
-"/a-hira/na-hira/ta-hira/no-hira/ka-hira/o-hira",
-"/a-hira.001",
-"/asmall-hira",
-"/asmall-hira.vert",
-"/so-hira/ka-hira",
-"/ka-hira/a-hira",
-"/so-hira",
-"/a-hira",
-"/na-hira",
-"/ga-hira",
-"/ka-hira.002",
-"/ka-hira.003",
-"/ka-hira.001",
-"/ka-hira/na-hira/ko-hira",
-"/a-hira/ku-hira/ma-hira/si-hira/ri-hira/da-hira/sa-hira/i-hira/so-hira/wo-hira",
-"/a-hira/ku-hira/ma-hira",
-"/gu-hira",
-"/gi-hira",
-"/si-hira/ku-hira/na-hira i/wo-hira",
-"/mi-hira",
-"/ku-hira",
-"/ku-hira.001",
-"/ko-hira/wo-hira/ne-hira/ru-hira",
-"/uni56FD/wo-hira",
-"/ru-hira/ro-hira/u-hira",
-"/go-hira",
-"/ti-hira",
-"/di-hira",
-"/ta-hira",
-"/da-hira",
-"/tu-hira \012/uni56FD/ma-hira/ti-hira/wo-hira",
-"/esmall-hira.vert",
-"/esmall-hira.vert",
-"/esmall-hira.vert",
-"/esmall-hira.vert"
-);
+.appVersion = "1286";
 customParameters = (
 {
 name = ROS;
@@ -104,7 +25,7 @@ space
 }
 );
 date = "2018-05-13 07:43:52 +0000";
-familyName = "Mochiy Pop";
+familyName = "Mochi Pop";
 featurePrefixes = (
 {
 automatic = 1;
@@ -25827,7 +25748,11 @@ instances = (
 customParameters = (
 {
 name = postscriptFullName;
-value = "しっぽりアンチック";
+value = "Mochi Pop";
+},
+{
+name = postscriptFontName;
+value = "MochiPop-Heavy";
 }
 );
 instanceInterpolations = {

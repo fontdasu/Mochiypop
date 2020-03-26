@@ -36069,8 +36069,20 @@ instances = (
 {
 customParameters = (
 {
+name = postscriptFontName;
+value = "MochiyPop-ExtraBold";
+},
+{
+name = localizedStyleName;
+value = "Japanese;ExtraBold";
+},
+{
+name = weightClass;
+value = 700;
+},
+{
 name = postscriptFullName;
-value = "しっぽりアンチック";
+value = "モッチーポップ ExtraBold";
 }
 );
 instanceInterpolations = {

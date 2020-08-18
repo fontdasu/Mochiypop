@@ -30,6 +30,9 @@ ver２.00では、濁点仮名の追加、基本ASCII＋Laten-1文字の追加�
 ・ひらがな、カタカナ、全角英数、全角記号、縦書き用文字、濁点仮名<br />
 ・漢字はSILライセンスの<a href="https://github.com/adobe-fonts/source-han-sans/tree/release/SubsetOTF/JP" target="_blank">源ノ角ゴシック</a>のものを収録
 
+<h2>文字サンプル</h2>
+
+<img src="./sample3.png" />
 
 <h2>できないこと</h2>
 ・作成した派生フォントの名前に「モッチーポップ」の文字を含めることはできません。<br />

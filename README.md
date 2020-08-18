@@ -31,7 +31,7 @@ ver２.00では、濁点仮名の追加、基本ASCII＋Laten-1文字の追加�
 <h2>収録文字</h2>
 ・基本ASCII＋Laten-1文字<br />
 ・ひらがな、カタカナ、全角英数、全角記号、縦書き用文字、濁点仮名<br />
-・漢字はSILライセンスの<a href="https://github.com/adobe-fonts/source-han-sans/tree/release/SubsetOTF/JP" target="_blank">源ノ角ゴシック</a>のものを収録
+・漢字のみSILライセンスの<a href="https://github.com/adobe-fonts/source-han-sans/tree/release/SubsetOTF/JP" target="_blank">源ノ角ゴシック</a>のものを収録
 
 <h2>字形サンプル</h2>
 

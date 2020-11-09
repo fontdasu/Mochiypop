@@ -31,6 +31,8 @@ for glyph in exportFont.glyphOrder:
         exportFont[glyph[:-5]].setLeftMargin(palt_LSB, exportFont.layers["public.default"])
         exportFont[glyph[:-5]].setLeftMargin(palt_RSB, exportFont.layers["public.default"])
 
+exportFont.info.familyName = "Mochiy Pop P One"
+
 print ("[Mochiy Pop P One] Compiling")
 p_ttf = ufo2ft.compileTTF(exportFont)
 DSIG_modification(p_ttf)

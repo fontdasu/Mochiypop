@@ -1,6 +1,6 @@
 from glyphsLib.cli import main
 from fontTools.ttLib import TTFont, newTable
-import glob, shutil, subprocess
+import glob, shutil, subprocess, os
 import ufo2ft
 import ufoLib2
 from pathlib import Path
@@ -40,6 +40,7 @@ print ("[Mochiy Pop P One] Saving")
 p_ttf.save("fonts/ttf/MochiyPopPOne-Regular.ttf")
 
 shutil.rmtree("sources/MochiyPopOne-Regular.ufo")
+os.remove("sources/MochiyPop.designspace")
 
 ttf = Path("fonts/ttf")
 

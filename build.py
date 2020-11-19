@@ -20,6 +20,8 @@ print ("[Mochiy Pop One] Compiling")
 exportFont = ufoLib2.Font.open("sources/MochiyPopOne-Regular.ufo")
 static_ttf = ufo2ft.compileTTF(exportFont)
 DSIG_modification(static_ttf)
+static_ttf["name"].addMultilingualName({'ja':'モッチーポップ One'}, static_ttf, nameID = 1, windows=True, mac=False)
+static_ttf["name"].addMultilingualName({'ja':'Regular'}, static_ttf, nameID = 2, windows=True, mac=False)
 print ("[Mochiy Pop One] Saving")
 static_ttf.save("fonts/ttf/MochiyPopOne-Regular.ttf")
 
@@ -36,6 +38,10 @@ exportFont.info.familyName = "Mochiy Pop P One"
 print ("[Mochiy Pop P One] Compiling")
 p_ttf = ufo2ft.compileTTF(exportFont)
 DSIG_modification(p_ttf)
+
+p_ttf["name"].addMultilingualName({'ja':'モッチーポップ P One'}, p_ttf, nameID = 1, windows=True, mac=False)
+p_ttf["name"].addMultilingualName({'ja':'Regular'}, p_ttf, nameID = 2, windows=True, mac=False)
+
 print ("[Mochiy Pop P One] Saving")
 p_ttf.save("fonts/ttf/MochiyPopPOne-Regular.ttf")
 

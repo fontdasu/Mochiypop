@@ -18,7 +18,7 @@ main(("glyphs2ufo", "sources/MochiyPop.glyphs"))
 
 print ("[Mochiy Pop One] Compiling")
 exportFont = ufoLib2.Font.open("sources/MochiyPopOne-Regular.ufo")
-static_ttf = ufo2ft.compileTTF(exportFont)
+static_ttf = ufo2ft.compileTTF(exportFont, removeOverlaps=True)
 DSIG_modification(static_ttf)
 static_ttf["name"].addMultilingualName({'ja':'モッチーポップ One'}, static_ttf, nameID = 1, windows=True, mac=False)
 static_ttf["name"].addMultilingualName({'ja':'Regular'}, static_ttf, nameID = 2, windows=True, mac=False)
@@ -36,7 +36,7 @@ for glyph in exportFont.glyphOrder:
 exportFont.info.familyName = "Mochiy Pop P One"
 
 print ("[Mochiy Pop P One] Compiling")
-p_ttf = ufo2ft.compileTTF(exportFont)
+p_ttf = ufo2ft.compileTTF(exportFont, removeOverlaps=True)
 DSIG_modification(p_ttf)
 
 p_ttf["name"].addMultilingualName({'ja':'モッチーポップ P One'}, p_ttf, nameID = 1, windows=True, mac=False)

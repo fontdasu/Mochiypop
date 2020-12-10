@@ -30,8 +30,8 @@ for glyph in exportFont.glyphOrder:
     if ".palt" in glyph:
         palt_LSB = exportFont[glyph].getLeftMargin(exportFont.layers["public.default"])
         palt_RSB = exportFont[glyph].getRightMargin(exportFont.layers["public.default"])
+        exportFont[glyph[:-5]].setRightMargin(palt_RSB, exportFont.layers["public.default"])
         exportFont[glyph[:-5]].setLeftMargin(palt_LSB, exportFont.layers["public.default"])
-        exportFont[glyph[:-5]].setLeftMargin(palt_RSB, exportFont.layers["public.default"])
 
 exportFont.info.familyName = "Mochiy Pop P One"
 

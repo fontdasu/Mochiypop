@@ -61,10 +61,8 @@ for sub in palt_set:
     p = split[1]
     fw = split[0]
     
-    if "vert" in sub:
-        p_ttf["vmtx"].metrics[fw] = p_ttf["vmtx"].metrics[p]
-    else:
-        p_ttf["hmtx"].metrics[fw] = p_ttf["hmtx"].metrics[p]
+    p_ttf["vmtx"].metrics[fw] = p_ttf["vmtx"].metrics[p]
+    p_ttf["hmtx"].metrics[fw] = p_ttf["hmtx"].metrics[p]
 
 print ("[Mochiy Pop P One] Saving")
 p_ttf.save("fonts/ttf/MochiyPopPOne-Regular.ttf")

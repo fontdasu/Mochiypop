@@ -823,3 +823,7 @@ sub uniE0D8.vert by uniE0D8.vert.palt;
 sub uniE0D9.vert by uniE0D9.vert.palt;
 sub uniE0DA.vert by uniE0DA.vert.palt;
 sub uniE0DB.vert by uniE0DB.vert.palt;
+sub uniFE3B.vert by uniFE3B.vert.palt;
+sub uniFE3C.vert by uniFE3C.vert.palt;
+sub uniFE3F.vert by uniFE3F.vert.palt;
+sub uniFE40.vert by uniFE40.vert.palt;

@@ -30,7 +30,7 @@ print ("[Mochiy Pop One] Compiling")
 exportFont = ufoLib2.Font.open("sources/MochiyPopOne-Regular.ufo")
 
 exportFont.lib['com.github.googlei18n.ufo2ft.filters'] = [{
-    "name": "decomposeComponents",
+    "name": "flattenComponents",
     "pre": 1,
 }]
 

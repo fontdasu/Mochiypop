@@ -13,6 +13,12 @@ for line in f.readlines():
     sub = str(line).rstrip().replace(";","")[4:]
     palt_set.append(sub)
 
+def GASP_set(font:TTFont):
+    if "gasp" not in font:
+        font["gasp"] = newTable("gasp")
+        font["gasp"].gaspRange = {}
+    if font["gasp"].gaspRange != {65535: 0x000A}:
+        font["gasp"].gaspRange = {65535: 0x000A}
 
 def DSIG_modification(font:TTFont):
     font["DSIG"] = newTable("DSIG")     #need that stub dsig
@@ -41,6 +47,7 @@ DSIG_modification(static_ttf)
 static_ttf["name"].addMultilingualName({'ja':'モッチーポップ One'}, static_ttf, nameID = 1, windows=True, mac=False)
 static_ttf["name"].addMultilingualName({'ja':'Regular'}, static_ttf, nameID = 2, windows=True, mac=False)
 print ("[Mochiy Pop One] Saving")
+GASP_set(static_ttf)
 static_ttf.save("fonts/ttf/MochiyPopOne-Regular.ttf")
 
 # BUILDING PROPORTIONAL VERSION
@@ -65,6 +72,7 @@ for sub in palt_set:
     p_ttf["hmtx"].metrics[fw] = p_ttf["hmtx"].metrics[p]
 
 print ("[Mochiy Pop P One] Saving")
+GASP_set(p_ttf)
 p_ttf.save("fonts/ttf/MochiyPopPOne-Regular.ttf")
 
 # CLEANUP AND HINTING
@@ -73,16 +81,3 @@ shutil.rmtree("sources/MochiyPopOne-Regular.ufo")
 os.remove("sources/MochiyPop.designspace")
 
 ttf = Path("fonts/ttf")
-
-for file in ttf.glob("*.ttf"):
-    print ("["+str(file).split("/")[2][:-4]+"] Autohinting")
-    subprocess.check_call(
-            [
-                "ttfautohint",
-                "--stem-width",
-                "nsn",
-                str(file),
-                str(file)[:-4]+"-hinted.ttf",
-            ]
-        )
-    shutil.move(str(file)[:-4]+"-hinted.ttf", str(file))
